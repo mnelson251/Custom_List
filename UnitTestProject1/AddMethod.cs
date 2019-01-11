@@ -5,11 +5,11 @@ using CustomList;
 namespace UnitTestProject1
 {
     [TestClass]
-    public class TestAddMethod
+    public class AddMethod
     {
         [TestMethod]
         
-        public void cAddMethod_UNK_valueAdded() // cAdd method adds to list?
+        public void AddMethod_intAdded() // cAdd method adds to list?
         {
             //Arrange
             List_Custom<int> myList = new List_Custom<int>();
@@ -24,7 +24,7 @@ namespace UnitTestProject1
         }
 
         [TestMethod]
-        public void cAddPlacement_UNK_valueAdded() // upon adding an ojb - correct place?
+        public void Placement_intAdded() // upon adding an ojb - correct place?
         {
             //Arrange
             List_Custom<int> myList = new List_Custom<int>();
@@ -41,7 +41,7 @@ namespace UnitTestProject1
         }
 
         [TestMethod]
-        public void cAddPlacementTWO_UNK_valueAdded() // upon adding a second object - correct placement ??
+        public void PlacementIndex_intAdd() // upon adding a second object - correct placement ??
         {
             //Arrange
             List_Custom<int> myList = new List_Custom<int>();
@@ -58,7 +58,7 @@ namespace UnitTestProject1
         }
 
         [TestMethod]
-        public void cAddPlacementTHREE_UNK_valueAdded() // upon adding a third object - correct placement ??
+        public void PlacementIndex_thirdPlace_intAdded() // upon adding a third object - correct placement ??
         {
             //Arrange
             List_Custom<int> myList = new List_Custom<int>();
@@ -77,7 +77,7 @@ namespace UnitTestProject1
         }
 
         [TestMethod]
-        public void cAddPlacementSpecific_UNK_valueAdded() // with multi objects in list - correct placement of index 2 ??
+        public void PlacementSpecific_intAdded() // with multi objects in list - correct placement of index 2 ??
         {
             //Arrange
             List_Custom<int> myList = new List_Custom<int>();
@@ -100,7 +100,7 @@ namespace UnitTestProject1
             Assert.AreEqual(expectedIndex3, myList[3]);
 
         }
-
+        
 
 
     }
