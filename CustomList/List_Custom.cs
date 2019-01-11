@@ -1,0 +1,74 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace CustomList
+{
+    public class List_Custom <T> 
+    {
+
+        public int count;
+        public int capacity;
+        public bool CompareValues;
+        public int returnedType;
+
+
+        T[] myList;
+
+        public List_Custom()
+        {
+            capacity = 4;
+            myList = new T[capacity];
+        }
+
+        public int value { get; private set; }
+
+        public T this[int index] 
+        {
+            get => myList[index];
+            protected set => myList[index] = value;
+        }
+
+        public void cResizeCondition()
+        {
+            CompareValues = (capacity == count);
+            if (capacity == count)
+            {
+                capacity = capacity * 2;
+                
+                T[] newList = new T[capacity];
+
+                for (int i = 0; i < myList.Length; i++)
+                {
+                    newList[i] = myList[i];
+                }
+                myList = newList;
+            }
+        }
+
+        public void cAdd(T input) // method adds to list 
+        {
+            count++;
+            cResizeCondition();
+            myList[count - 1] = input;
+            
+        }
+
+        public void cRemove(T item) //method removes from list
+        {
+
+
+        }
+
+        public void cCount(T item) //method counts list
+        {
+
+
+        }
+
+       
+
+    }
+}
