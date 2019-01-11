@@ -62,27 +62,23 @@ namespace CustomList
             for (int i = 0; i < myList.Length; i++) 
             {
 
-                //int NewCount = myList.Length;
-
-
                 if (myList[i].Equals(input))
                 {
-                    //count--;
-
+                    count--;
                     myList[i] = default(T);
-                    
-                    for (int j = 0; j < myList.Length; i++)
-                    {
 
+                    for (int j = myList.Length; j > 0; j--)
+                    {
                         myList[i] = myList[i + 1];
+
                     }
 
-                    int lastPlace;
-                    lastPlace = myList.Length - 1;
-                    lastPlace = default(int);
-                   
-                }
+                    //int lastPlace;
+                    //lastPlace = myList.Length - 1;
+                    //lastPlace = default(int);
 
+                }
+                
             }
 
         }
