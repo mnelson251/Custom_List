@@ -5,7 +5,7 @@ using CustomList;
 namespace UnitTestProject1
 {
     [TestClass]
-    public class ResizeHelper
+    public class ResizeHelperTest
     {
         [TestMethod]
         public void ResizeHelper_doubleSize_intsAdded() // should double the size of the array

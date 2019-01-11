@@ -5,7 +5,7 @@ using CustomList;
 namespace UnitTestProject1
 {
     [TestClass]
-    public class AddMethod
+    public class AddMethodTest
     {
         [TestMethod]
         

@@ -33,7 +33,7 @@ namespace CustomList
 
         public void cResizeCondition()
         {
-            CompareValues = (capacity == count);
+            //CompareValues = (capacity == count);
             if (capacity == count)
             {
                 capacity = capacity * 2;
@@ -56,9 +56,10 @@ namespace CustomList
             
         }
 
-        public void cRemove(T item) //method removes from list
+        public void cRemove(T input) //method removes from list
         {
 
+           
 
         }
 

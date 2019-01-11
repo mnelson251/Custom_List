@@ -5,7 +5,7 @@ using CustomList;
 namespace UnitTestProject1
 {
     [TestClass]
-    public class AddString
+    public class AddStringTest
     {
         [TestMethod]
         public void Add_DataTypeString_DataTypeAdded()

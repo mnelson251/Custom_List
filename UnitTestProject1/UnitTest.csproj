@@ -49,11 +49,11 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddMethod.cs" />
+    <Compile Include="AddMethodTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RemoveMethod.cs" />
-    <Compile Include="ResizeHelper.cs" />
-    <Compile Include="AddString.cs" />
+    <Compile Include="RemoveMethodTest.cs" />
+    <Compile Include="ResizeHelperTest.cs" />
+    <Compile Include="AddStringTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
