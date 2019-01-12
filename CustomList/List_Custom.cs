@@ -8,13 +8,10 @@ namespace CustomList
 {
     public class List_Custom <T> 
     {
-
         public int count;
         public int capacity;
         public bool CompareValues;
         public int returnedType;
-
-
         T[] myList;
 
         public List_Custom()
@@ -33,13 +30,10 @@ namespace CustomList
 
         public void cResizeCondition()
         {
-            //CompareValues = (capacity == count);
             if (capacity == count)
             {
                 capacity = capacity * 2;
-                
                 T[] newList = new T[capacity];
-
                 for (int i = 0; i < myList.Length; i++)
                 {
                     newList[i] = myList[i];
@@ -52,34 +46,25 @@ namespace CustomList
         {
             count++;
             cResizeCondition();
-            myList[count - 1] = input;
-            
+            myList[count - 1] = input;  
         }
 
         public void cRemove(T input) //method removes from list
         {
-            
             for (int i = 0; i < myList.Length; i++) 
             {
-
                 if (myList[i].Equals(input))
                 {
-                    
                     myList[i] = default(T);
                     count--;
-
                     for (int j = i; j < count; j++)
                     {
                         myList[j] = myList[j + 1];
                     }
-
                     myList[count] = default(T);
                     break;
-
-                }
-                
+                } 
             }
-
         }
 
         public void cCount(T item) //method counts list
