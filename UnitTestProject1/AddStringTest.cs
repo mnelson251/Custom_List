@@ -16,7 +16,7 @@ namespace UnitTestProject1
             string expectedResult = "Testing";
 
             //Act
-            myList.cAdd(expectedResult);
+            myList.Add(expectedResult);
 
             //Assert
             Assert.AreEqual(expectedResult, myList[0]);
@@ -34,10 +34,10 @@ namespace UnitTestProject1
             string expectedResult3 = ".";
 
             //Act
-            myList.cAdd(expectedResult);
-            myList.cAdd(expectedResult1);
-            myList.cAdd(expectedResult2);
-            myList.cAdd(expectedResult3);
+            myList.Add(expectedResult);
+            myList.Add(expectedResult1);
+            myList.Add(expectedResult2);
+            myList.Add(expectedResult3);
 
             //Assert
             Assert.AreEqual(expectedResult3, myList[3]);

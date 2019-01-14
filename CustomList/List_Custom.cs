@@ -1,13 +1,14 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Collections;
+
 
 namespace CustomList
 {
-    public class List_Custom <T>
+    public class List_Custom <T> : IEnumerable
     {
         //readonly int count;
         int _count;
@@ -34,7 +35,7 @@ namespace CustomList
             protected set => myList[index] = value;
         }
 
-        public void cResizeCondition()
+        public void ResizeCondition()
         {
             if (capacity == _count)
             {
@@ -48,14 +49,14 @@ namespace CustomList
             }
         }
 
-        public void cAdd(T input) // method adds to list 
+        public void Add(T input) // method adds to list 
         {
             _count++;
-            cResizeCondition();
+            ResizeCondition();
             myList[_count - 1] = input;  
         }
 
-        public void cRemove(T input) //method removes from list
+        public void Remove(T input) //method removes from list
         {
             for (int i = 0; i < myList.Length; i++) 
             {
@@ -84,16 +85,23 @@ namespace CustomList
             return StringedValues;
         }
 
+        public IEnumerator GetEnumerator()
+        {
+            throw new NotImplementedException();
+
+
+        }
+
         public static List_Custom<T> operator + (List_Custom<T> input, List_Custom<T> input2)
         {
             List_Custom<T> newList = new List_Custom<T>();
             for (int i = 0; i < input.count; i++)
             {
-                newList.cAdd(input[i]);
+                newList.Add(input[i]);
             }
             for (int i = 0; i < input2.count; i++)
             {
-                newList.cAdd(input2[i]);
+                newList.Add(input2[i]);
             }
             return newList;
         }
@@ -105,12 +113,15 @@ namespace CustomList
             newList = input;
             for (int i = 0; i < input2.count; i++)
             {
-                newList.cRemove(input2[i]);
+                newList.Remove(input2[i]);
             }
             return newList;
         }
 
+        public void Zipper(List_Custom<T> input, List_Custom<T> input2)
+        {
 
+        }
 
 
 

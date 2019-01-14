@@ -23,14 +23,14 @@ namespace UnitTestProject1
             int list2index2 = 35;
             int list2index3 = 45;
             
-            list1.cAdd(list1index0);
-            list1.cAdd(list1index1);
-            list1.cAdd(list1index2);
-            list1.cAdd(list1index3);
-            list1.cAdd(list2index0);
-            list1.cAdd(list2index1);
-            list1.cAdd(list2index2);
-            list1.cAdd(list2index3);
+            list1.Add(list1index0);
+            list1.Add(list1index1);
+            list1.Add(list1index2);
+            list1.Add(list1index3);
+            list1.Add(list2index0);
+            list1.Add(list2index1);
+            list1.Add(list2index2);
+            list1.Add(list2index3);
             //Act
             list3 = list1 + list2;
             //Assert
@@ -53,14 +53,14 @@ namespace UnitTestProject1
             int list2index2 = 35;
             int list2index3 = 45;
 
-            list1.cAdd(list1index0);
-            list1.cAdd(list1index1);
-            list1.cAdd(list1index2);
-            list1.cAdd(list1index3);
-            list1.cAdd(list2index0);
-            list1.cAdd(list2index1);
-            list1.cAdd(list2index2);
-            list1.cAdd(list2index3);
+            list1.Add(list1index0);
+            list1.Add(list1index1);
+            list1.Add(list1index2);
+            list1.Add(list1index3);
+            list1.Add(list2index0);
+            list1.Add(list2index1);
+            list1.Add(list2index2);
+            list1.Add(list2index3);
             //Act
             list3 = list1 + list2;
             //Assert
@@ -78,10 +78,10 @@ namespace UnitTestProject1
             int list1index1 = 20;
             int list2index0 = 15;
             int list2index1 = 25;
-            list1.cAdd(list1index0);
-            list1.cAdd(list1index1);
-            list2.cAdd(list2index0);
-            list2.cAdd(list2index1);
+            list1.Add(list1index0);
+            list1.Add(list1index1);
+            list2.Add(list2index0);
+            list2.Add(list2index1);
             //Act
             list3 = list1 + list2;
             //Assert
@@ -99,10 +99,10 @@ namespace UnitTestProject1
             int list1index1 = 20;
             int list2index0 = 15;
             int list2index1 = 25;
-            list1.cAdd(list1index0);
-            list1.cAdd(list1index1);
-            list1.cAdd(list2index0);
-            list1.cAdd(list2index1);
+            list1.Add(list1index0);
+            list1.Add(list1index1);
+            list1.Add(list2index0);
+            list1.Add(list2index1);
             //Act
             list3 = list1 + list2;
             //Assert
@@ -120,10 +120,10 @@ namespace UnitTestProject1
             int list1index1 = 20;
             int list2index0 = 15;
             int list2index1 = 25;
-            list1.cAdd(list1index0);
-            list1.cAdd(list1index1);
-            list1.cAdd(list2index0);
-            list1.cAdd(list2index1);
+            list1.Add(list1index0);
+            list1.Add(list1index1);
+            list1.Add(list2index0);
+            list1.Add(list2index1);
             //Act
             list3 = list1 + list2;
             list3.cRemove(list3[1]);
@@ -142,14 +142,14 @@ namespace UnitTestProject1
             int list1index1 = 20;
             int list2index0 = 15;
             int list2index1 = 25;
-            list1.cAdd(list1index0);
-            list1.cAdd(list1index1);
-            list1.cAdd(list2index0);
-            list1.cAdd(list2index1);
+            list1.Add(list1index0);
+            list1.Add(list1index1);
+            list1.Add(list2index0);
+            list1.Add(list2index1);
             //Act
             list3 = list1 + list2;
             list3.cRemove(list3[1]);
-            list3.cAdd(list1index1);
+            list3.Add(list1index1);
             //Assert
             Assert.AreEqual(4, list3.count);
         }
@@ -165,14 +165,14 @@ namespace UnitTestProject1
             int list1index1 = 20;
             int list2index0 = 15;
             int list2index1 = 25;
-            list1.cAdd(list1index0);
-            list1.cAdd(list1index1);
-            list1.cAdd(list2index0);
-            list1.cAdd(list2index1);
+            list1.Add(list1index0);
+            list1.Add(list1index1);
+            list1.Add(list2index0);
+            list1.Add(list2index1);
             //Act
             list3 = list1 + list2;
             list3.cRemove(list3[1]);
-            list3.cAdd(list1index1);
+            list3.Add(list1index1);
             //Assert
             Assert.AreEqual(list1index1, list3[3]);
         }

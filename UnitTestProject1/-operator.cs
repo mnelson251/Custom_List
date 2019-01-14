@@ -20,12 +20,12 @@ namespace UnitTestProject1
             int list2index0 = 15;
             int list2index1 = 25;
             int list2index2 = 10;
-            list1.cAdd(list1index0);
-            list1.cAdd(list1index1);
-            list1.cAdd(list1index2);
-            list2.cAdd(list2index0);
-            list2.cAdd(list2index1);
-            list2.cAdd(list2index2);
+            list1.Add(list1index0);
+            list1.Add(list1index1);
+            list1.Add(list1index2);
+            list2.Add(list2index0);
+            list2.Add(list2index1);
+            list2.Add(list2index2);
             //Act
             list3 = list1 - list2;
             //Assert
@@ -50,17 +50,17 @@ namespace UnitTestProject1
             int list2index2 = 10;
             int list2index3 = 30;
             int list2index4 = 35;
-            list1.cAdd(list1index0);
-            list1.cAdd(list1index1);
-            list1.cAdd(list1index2);
-            list2.cAdd(list2index0);
-            list2.cAdd(list2index1);
-            list2.cAdd(list2index2);
-            list1.cAdd(list1index3);
-            list1.cAdd(list1index4);
-            list2.cAdd(list2index3);
-            list2.cAdd(list2index4);
-            list2.cAdd(list1index5);
+            list1.Add(list1index0);
+            list1.Add(list1index1);
+            list1.Add(list1index2);
+            list2.Add(list2index0);
+            list2.Add(list2index1);
+            list2.Add(list2index2);
+            list1.Add(list1index3);
+            list1.Add(list1index4);
+            list2.Add(list2index3);
+            list2.Add(list2index4);
+            list2.Add(list1index5);
             //Act
             list3 = list1 - list2;
             //Assert

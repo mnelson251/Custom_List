@@ -57,6 +57,7 @@
     <Compile Include="ToStringOverRideTest.cs" />
     <Compile Include="+operator.cs" />
     <Compile Include="-operator.cs" />
+    <Compile Include="Zipper.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

@@ -18,7 +18,7 @@ namespace UnitTestProject1
             int intToBeEntererd = 10;
             int expectedValue = 0;
             //Act
-            testItem.cAdd(intToBeEntererd);
+            testItem.Add(intToBeEntererd);
             testItem.cRemove(intToBeEntererd);
             //Assert
             Assert.AreEqual(expectedValue, testItem.count);
@@ -55,10 +55,10 @@ namespace UnitTestProject1
             int expectedResult2 = 40;
             int expectedResult3 = 60;
             //Act
-            testItem.cAdd(expectedResult0);
-            testItem.cAdd(expectedResult1);
-            testItem.cAdd(expectedResult2);
-            testItem.cAdd(expectedResult3);
+            testItem.Add(expectedResult0);
+            testItem.Add(expectedResult1);
+            testItem.Add(expectedResult2);
+            testItem.Add(expectedResult3);
             testItem.cRemove(expectedResult0);
             //Assert
             Assert.IsFalse(expectedResult0 == testItem[0]);
@@ -78,11 +78,11 @@ namespace UnitTestProject1
             string expectedResult3 = "love";
             string expectedResult4 = "indifferent";
             //Act
-            testItem.cAdd(expectedResult0);
-            testItem.cAdd(expectedResult1);
-            testItem.cAdd(expectedResult2);
-            testItem.cAdd(expectedResult3);
-            testItem.cAdd(expectedResult4);
+            testItem.Add(expectedResult0);
+            testItem.Add(expectedResult1);
+            testItem.Add(expectedResult2);
+            testItem.Add(expectedResult3);
+            testItem.Add(expectedResult4);
             testItem.cRemove("love");
             //Assert
             Assert.AreEqual(4, testItem.count);
@@ -103,11 +103,11 @@ namespace UnitTestProject1
             string ToBeEntered4 = "indifferent";
             string expectedString = "love";
             //Act
-            testItem.cAdd(ToBeEntered0);
-            testItem.cAdd(ToBeEntered1);
-            testItem.cAdd(ToBeEntered2);
-            testItem.cAdd(ToBeEntered3);
-            testItem.cAdd(ToBeEntered4);
+            testItem.Add(ToBeEntered0);
+            testItem.Add(ToBeEntered1);
+            testItem.Add(ToBeEntered2);
+            testItem.Add(ToBeEntered3);
+            testItem.Add(ToBeEntered4);
             testItem.cRemove("love");
             //Assert
             Assert.AreEqual(expectedString, testItem[2]);

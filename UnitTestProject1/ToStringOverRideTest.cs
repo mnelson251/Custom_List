@@ -18,10 +18,10 @@ namespace UnitTestProject1
             int IntAt3 = 8;
             string StringedList = " 2, 4, 6, 8, ";
             //Act
-            myList.cAdd(IntAt0);
-            myList.cAdd(IntAt1);
-            myList.cAdd(IntAt2);
-            myList.cAdd(IntAt3);
+            myList.Add(IntAt0);
+            myList.Add(IntAt1);
+            myList.Add(IntAt2);
+            myList.Add(IntAt3);
             string outcome = myList.ToString();
             //Assert
             Assert.AreEqual( outcome, StringedList);

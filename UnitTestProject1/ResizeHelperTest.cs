@@ -21,13 +21,13 @@ namespace UnitTestProject1
             int expectedIndex6 = 9;
 
             //Act
-            myList.cAdd(expectedIndex0);
-            myList.cAdd(expectedIndex1);
-            myList.cAdd(expectedIndex2);
-            myList.cAdd(expectedIndex3);
-            myList.cAdd(expectedIndex4);
-            myList.cAdd(expectedIndex5);
-            myList.cAdd(expectedIndex6);
+            myList.Add(expectedIndex0);
+            myList.Add(expectedIndex1);
+            myList.Add(expectedIndex2);
+            myList.Add(expectedIndex3);
+            myList.Add(expectedIndex4);
+            myList.Add(expectedIndex5);
+            myList.Add(expectedIndex6);
 
             //Assert
             Assert.AreEqual(expectedIndex5, myList[5]);
@@ -49,15 +49,15 @@ namespace UnitTestProject1
             int expectedIndex8 = 11;
 
             //Act
-            myList.cAdd(expectedIndex0);
-            myList.cAdd(expectedIndex1);
-            myList.cAdd(expectedIndex2);
-            myList.cAdd(expectedIndex3);
-            myList.cAdd(expectedIndex4);
-            myList.cAdd(expectedIndex5);
-            myList.cAdd(expectedIndex6);
-            myList.cAdd(expectedIndex7);
-            myList.cAdd(expectedIndex8);
+            myList.Add(expectedIndex0);
+            myList.Add(expectedIndex1);
+            myList.Add(expectedIndex2);
+            myList.Add(expectedIndex3);
+            myList.Add(expectedIndex4);
+            myList.Add(expectedIndex5);
+            myList.Add(expectedIndex6);
+            myList.Add(expectedIndex7);
+            myList.Add(expectedIndex8);
 
             //Assert
             Assert.AreEqual(expectedIndex7, myList[7]);
@@ -83,20 +83,20 @@ namespace UnitTestProject1
             int expectedIndex13 = 16;
 
             //Act
-            myList.cAdd(expectedIndex0);
-            myList.cAdd(expectedIndex1);
-            myList.cAdd(expectedIndex2);
-            myList.cAdd(expectedIndex3);
-            myList.cAdd(expectedIndex4);
-            myList.cAdd(expectedIndex5);
-            myList.cAdd(expectedIndex6);
-            myList.cAdd(expectedIndex7);
-            myList.cAdd(expectedIndex8);
-            myList.cAdd(expectedIndex9);
-            myList.cAdd(expectedIndex10);
-            myList.cAdd(expectedIndex11);
-            myList.cAdd(expectedIndex12);
-            myList.cAdd(expectedIndex13);
+            myList.Add(expectedIndex0);
+            myList.Add(expectedIndex1);
+            myList.Add(expectedIndex2);
+            myList.Add(expectedIndex3);
+            myList.Add(expectedIndex4);
+            myList.Add(expectedIndex5);
+            myList.Add(expectedIndex6);
+            myList.Add(expectedIndex7);
+            myList.Add(expectedIndex8);
+            myList.Add(expectedIndex9);
+            myList.Add(expectedIndex10);
+            myList.Add(expectedIndex11);
+            myList.Add(expectedIndex12);
+            myList.Add(expectedIndex13);
 
             //Assert
             Assert.AreEqual(expectedIndex13, myList[13]);
