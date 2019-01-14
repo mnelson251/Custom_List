@@ -55,6 +55,7 @@
     <Compile Include="ResizeHelperTest.cs" />
     <Compile Include="AddStringTest.cs" />
     <Compile Include="ToStringOverRideTest.cs" />
+    <Compile Include="+operator.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

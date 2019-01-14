@@ -72,13 +72,6 @@ namespace CustomList
                 } 
             }
         }
-
-        public void cCount(T item) //method counts list
-        {
-
-
-        }
-
         
         public override string ToString()
         {
@@ -89,6 +82,20 @@ namespace CustomList
                 StringedValues += ConvertedValue;
             }
             return StringedValues;
+        }
+
+        public static List_Custom<T> operator + (List_Custom<T> input, List_Custom<T> input2)
+        {
+            List_Custom<T> newList = new List_Custom<T>();
+            for (int i = 0; i < input.count; i++)
+            {
+                newList.cAdd(input[i]);
+            }
+            for (int i = 0; i < input2.count; i++)
+            {
+                newList.cAdd(input2[i]);
+            }
+            return newList;
         }
 
 
