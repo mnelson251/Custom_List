@@ -24,26 +24,26 @@ namespace UnitTestProject1
             Assert.AreEqual(expectedValue, testItem.count);
         }
 
-        [TestMethod]
-        public void cRemove_ProperIndexRemoved_NullValueAtIndex()
-        {
-            //Arrange
-            List_Custom<int> testItem = new List_Custom<int>();
-            int expectedResult = 10;
-            int expectedResult1 = 20;
-            int expectedResult2 = 40;
-            int expectedResult3 = 60;
-            //if the last index of the array is removed is its value now set to zero?
-            //Act
-            testItem.cAdd(expectedResult);
-            testItem.cAdd(expectedResult1);
-            testItem.cAdd(expectedResult2);
-            testItem.cAdd(expectedResult3);
-            testItem.cRemove(expectedResult3);
-            //Assert
-            Assert.IsNull(testItem[3]);
-            //after index is removed, because the array will not be resized
-        }
+        //[TestMethod]
+        //public void cRemove_ProperIndexRemoved_NullValueAtIndex()
+        //{
+        //    //Arrange
+        //    List_Custom<int> testItem = new List_Custom<int>();
+        //    int expectedResult = 10;
+        //    int expectedResult1 = 20;
+        //    int expectedResult2 = 40;
+        //    int expectedResult3 = 60;
+        //    //if the last index of the array is removed is its value now set to zero?
+        //    //Act
+        //    testItem.cAdd(expectedResult);
+        //    testItem.cAdd(expectedResult1);
+        //    testItem.cAdd(expectedResult2);
+        //    testItem.cAdd(expectedResult3);
+        //    testItem.cRemove(expectedResult3);
+        //    //Assert
+        //    Assert.IsNull(testItem[3]);
+        //    //after index is removed, because the array will not be resized
+        //}
 
         [TestMethod]
         public void cRemove_RemoveIndexNotEqualToIndex_ValuesAreNotEqual()

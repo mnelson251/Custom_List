@@ -54,6 +54,7 @@
     <Compile Include="RemoveMethodTest.cs" />
     <Compile Include="ResizeHelperTest.cs" />
     <Compile Include="AddStringTest.cs" />
+    <Compile Include="ToStringOverRideTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
