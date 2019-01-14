@@ -99,5 +99,15 @@ namespace CustomList
         }
 
 
+        public static List_Custom<T> operator - (List_Custom<T> input, List_Custom<T> input2)
+        {
+
+
+        }
+
+
+
+
+
     }
 }
