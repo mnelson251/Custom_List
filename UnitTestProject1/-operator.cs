@@ -64,7 +64,7 @@ namespace UnitTestProject1
             //Act
             list3 = list1 - list2;
             //Assert
-            Assert.AreEqual(list3[1], list2index0);
+            Assert.AreEqual(list1index1, list3[0]);
         }
 
 
