@@ -101,8 +101,13 @@ namespace CustomList
 
         public static List_Custom<T> operator - (List_Custom<T> input, List_Custom<T> input2)
         {
-
-
+            List_Custom<T> newList = new List_Custom<T>();
+            newList = input;
+            for (int i = 0; i < input2.count; i++)
+            {
+                newList.cRemove(input2[i]);
+            }
+            return newList;
         }
 
 
