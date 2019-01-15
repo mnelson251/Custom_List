@@ -135,11 +135,11 @@ namespace CustomList
             
             for (int i = 0; i < Cealing; i++)
             {
-                if(myList[i] != null && i < _count)
+                if(i < _count)
                 {
                     newList.Add(this[i]);
                 }
-                if (input[i] != null && i < input._count)
+                if (i < input._count)
                 {
                     newList.Add(input[i]);
                 }
