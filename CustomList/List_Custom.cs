@@ -118,9 +118,11 @@ namespace CustomList
             return newList;
         }
 
-        public void Zipper(List_Custom<T> input, List_Custom<T> input2)
+        public List_Custom<T> Zipper(List_Custom<T> input)
         {
+            
 
+            return;
         }
 
 
