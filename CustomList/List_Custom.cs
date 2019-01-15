@@ -13,6 +13,7 @@ namespace CustomList
         //readonly int count;
         int _count;
         public int capacity;
+        private int Cealing;
         public bool CompareValues;
         public int returnedType;
         public string StringedValues;
@@ -120,9 +121,31 @@ namespace CustomList
 
         public List_Custom<T> Zipper(List_Custom<T> input)
         {
-            
+            List_Custom<T> newList = new List_Custom<T>();
 
-            return;
+            if (this._count > input._count)
+            {
+                Cealing = this._count;
+            }
+            else
+            {
+                Cealing = input._count;
+            }
+            
+            
+            for (int i = 0; i < Cealing; i++)
+            {
+                if(myList[i] != null && i < _count)
+                {
+                    newList.Add(this[i]);
+                }
+                if (input[i] != null && i < input._count)
+                {
+                    newList.Add(input[i]);
+                }
+            }
+
+            return newList;
         }
 
 

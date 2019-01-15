@@ -126,7 +126,7 @@ namespace UnitTestProject1
             list1.Add(list2index1);
             //Act
             list3 = list1 + list2;
-            list3.cRemove(list3[1]);
+            list3.Remove(list3[1]);
             //Assert
             Assert.AreEqual(3, list3.count);
         }
@@ -148,7 +148,7 @@ namespace UnitTestProject1
             list1.Add(list2index1);
             //Act
             list3 = list1 + list2;
-            list3.cRemove(list3[1]);
+            list3.Remove(list3[1]);
             list3.Add(list1index1);
             //Assert
             Assert.AreEqual(4, list3.count);
@@ -171,7 +171,7 @@ namespace UnitTestProject1
             list1.Add(list2index1);
             //Act
             list3 = list1 + list2;
-            list3.cRemove(list3[1]);
+            list3.Remove(list3[1]);
             list3.Add(list1index1);
             //Assert
             Assert.AreEqual(list1index1, list3[3]);

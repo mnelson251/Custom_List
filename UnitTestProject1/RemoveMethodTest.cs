@@ -19,7 +19,7 @@ namespace UnitTestProject1
             int expectedValue = 0;
             //Act
             testItem.Add(intToBeEntererd);
-            testItem.cRemove(intToBeEntererd);
+            testItem.Remove(intToBeEntererd);
             //Assert
             Assert.AreEqual(expectedValue, testItem.count);
         }
@@ -59,7 +59,7 @@ namespace UnitTestProject1
             testItem.Add(expectedResult1);
             testItem.Add(expectedResult2);
             testItem.Add(expectedResult3);
-            testItem.cRemove(expectedResult0);
+            testItem.Remove(expectedResult0);
             //Assert
             Assert.IsFalse(expectedResult0 == testItem[0]);
             // after I remove the index 0, it should not equal whats now at index 0
@@ -83,7 +83,7 @@ namespace UnitTestProject1
             testItem.Add(expectedResult2);
             testItem.Add(expectedResult3);
             testItem.Add(expectedResult4);
-            testItem.cRemove("love");
+            testItem.Remove("love");
             //Assert
             Assert.AreEqual(4, testItem.count);
             // function needs to loop through entire legth of array
@@ -108,7 +108,7 @@ namespace UnitTestProject1
             testItem.Add(ToBeEntered2);
             testItem.Add(ToBeEntered3);
             testItem.Add(ToBeEntered4);
-            testItem.cRemove("love");
+            testItem.Remove("love");
             //Assert
             Assert.AreEqual(expectedString, testItem[2]);
             // after removing one instance of string, did all the other strings shift?
