@@ -88,9 +88,10 @@ namespace CustomList
 
         public IEnumerator GetEnumerator()
         {
-            throw new NotImplementedException();
-
-
+            for (int i = 0; i < _count; i++)
+            {
+                yield return myList[i];
+            }
         }
 
         public static List_Custom<T> operator + (List_Custom<T> input, List_Custom<T> input2)
@@ -106,8 +107,7 @@ namespace CustomList
             }
             return newList;
         }
-
-
+        
         public static List_Custom<T> operator - (List_Custom<T> input, List_Custom<T> input2)
         {
             List_Custom<T> newList = new List_Custom<T>();
