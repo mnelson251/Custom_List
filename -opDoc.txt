@@ -1,0 +1,17 @@
+- Operator (OverLoad)
+Remarks: Will remove every instance of a variable if that variable is present in both arugments.
+Syntax:  public static List_Custom<T> operator - (List_Custom<T>, List_Custom<T>)
+Parameters: The first paramerter will be removed from. The second will continthe values to be removed.   
+Return Type: Is a generic custom list : List_Custom<T>
+Implements:   List_Custom<T>   -  List_Custom<T>
+Example: 
+Public void Example()
+{
+List_Custom<int> list1 = new List_Custom<int>() { 1, 3, 5 }
+List_Custom<int> list2 = new List_Custom<int>() { 5, 1, 9 }  
+List_Custom<int> list3 = new List_Custom<int>();
+list3 = list1 - list2;
+Console.WriteLine(list3);
+}
+Results: 
+9
