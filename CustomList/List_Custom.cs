@@ -32,8 +32,18 @@ namespace CustomList
 
         public T this[int index] 
         {
-            get => myList[index];
-            protected set => myList[index] = value;
+            get => index < 0 || index > myList.Length ? myList[index] : throw new IndexOutOfRangeException();
+            set
+            {
+                if (index < 0 || index > myList.Length)
+                {
+                    throw new IndexOutOfRangeException();
+                }
+                else
+                {
+                    myList[index] = value;
+                }
+            }
         }
 
         public void ResizeCondition()
