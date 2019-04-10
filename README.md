@@ -1,2 +1,2 @@
 # Custom_List
-Create a custom list
+This project recreates the funcationality of C# List data-type. 
